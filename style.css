@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.container {
+    text-align: center;
+    margin-inline: auto;
+    background-color: white;
+    /* border: 1px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 375px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5rem;
+}
+
+
+.container>* {
+    margin: 0 1.5em;
+    padding: 0.6em;
+    border-radius: 15px;
+    margin-bottom: 1.3em;
+    font-size: 1rem;
+
+}
+
+.hero {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* border: 1px solid salmon; */
+    /* height: 210px; */
+
+}
+
+.hero svg {
+    width: 100%;
+}
+
+.order h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+
+.text {
+    padding: 0;
+    color: hsl(224, 23%, 55%);
+    font-weight: normal;
+}
+
+.subs {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    /* border: 1px solid salmon; */
+}
+
+.music-icon {
+    /* border: 1px solid salmon; */
+    display: flex;
+    align-items: center;
+}
+
+.pay-btn {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    position: relative;
+    cursor: pointer;
+}
+
+.pay-btn a,
+.cancel-btn a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.pay-btn a {
+    color: white;
+}
+
+.change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change a {
+    color: hsl(245, 75%, 52%);
+
+}
+
+.change a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.pay-btn:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.5;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn a:hover {
+    color: hsl(245, 75%, 52%);
+}
